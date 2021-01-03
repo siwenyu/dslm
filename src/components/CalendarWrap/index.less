@@ -1,0 +1,175 @@
+.events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  .item-bg {
+    position: absolute;
+    top: 3px;
+    left: 21px;
+    width: 25px;
+    height: 20px;
+    transform: scale(0.8);
+    font-size: 12px;
+    background: url(../../assets/images/stu-pass-class2.png);
+    background-size: 100% 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+    .item-content {
+      display: none;
+      position: absolute;
+      width: 570px;
+      max-height: 290px;
+      padding: 24px 24px 12px;
+      top: 0;
+      left: -590px;
+      background: #fff;
+      z-index: 10;
+      box-shadow: 0px 0px 20px 0px #ddd;
+      border-radius: 8px;
+
+      .more {
+        color: #AA2E24;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 44px;
+        font-weight: bold;
+      }
+
+      .list-item {
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        color: #000;
+        margin: 5px 0;
+
+        .before {
+          border-radius: 50%;
+          width: 8px;
+          height: 8px;
+          background: #AA2E24;
+          align-self: center;
+          flex-shrink: 0;
+        }
+
+        .time {
+          margin: 0 10px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          width: 106px;
+          flex-shrink: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }  
+}
+
+.events .ant-badge-status {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  text-overflow: ellipsis;
+  font-size: 12px;
+}
+.notes-month {
+  text-align: center;
+  font-size: 28px;
+}
+.notes-month section {
+  font-size: 28px;
+}
+
+.home-rili .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-content {
+  height: 0;
+}
+.home-rili .ant-picker-calendar-full .ant-picker-panel .ant-picker-body th,
+.home-rili .ant-picker-calendar-full .ant-picker-panel .ant-picker-body td {
+  padding: 10px 0 0;
+  text-align: center;
+  width: 38px;
+  height: 34px;
+  font-weight: 300;
+  font-weight: 200;
+}
+
+.home-rili .ant-picker-calendar {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.home-rili .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date {
+  border-top: none;
+}
+
+.home-rili .ant-picker-calendar-full .ant-picker-panel .ant-picker-body td:hover {
+  z-index: 100;
+}
+
+.home-rili .ant-picker-calendar .ant-picker-panel .ant-picker-content {
+  width: 276px;
+}
+
+.home-rili .ant-picker-calendar-full .ant-picker-panel .ant-picker-body th {
+  color: rgba(0, 0, 0, .4);
+}
+
+.home-rili .ant-picker-calendar-full .ant-picker-panel .ant-picker-cell-selected .ant-picker-calendar-date {
+  border-radius: 4px;
+  border: 1px solid #DCD8D8;
+  background: none;
+  color: #AA2E24;
+}
+.time {
+  border-radius: 4px;
+  background: none;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.time.selected {
+  border-radius: 4px;
+  background: none;
+  margin: 0 auto;
+  color: #AA2E24;
+  background-color: #F9F0F0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.time.selected:hover {
+  color: #fff;
+  background-color: #AA2E24;
+}
+
+.time.selected-bg {
+  border-radius: 4px;
+  background: none;
+  margin: 0 auto;
+  background: #AA2E24;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.time.selected:hover {
+  .item-bg {
+    .item-content {
+      display: block;
+    }
+  }
+  .item-content {
+    display: block;
+  }
+}

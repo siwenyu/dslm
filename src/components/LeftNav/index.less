@@ -1,0 +1,54 @@
+.navleft {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+
+  .navleft-now {
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    background: #AA2E24;
+    font-size: 30px;
+  }
+
+  .navleft-list {
+    overflow: hidden;
+    .navleft-item {
+      height: 73px;
+      line-height: 74px;
+      text-align: left;
+      font-size: 16px;
+      background: #fff;
+      font-weight: 300;
+      color: #000;
+      padding-left: 24px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+      span {
+        position: absolute;
+        right: 24px;
+        top: 30px;
+      }
+
+      .navleft-tip {
+        margin-right: 24px;
+        color: rgba(0, 0, 0, .25);
+        font-size: 18px;
+      }
+    }
+
+    .navleft-item.active {
+      color: #AA2E24;
+      svg {
+        font-size: 12px;
+      }
+    }
+  }
+}

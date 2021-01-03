@@ -1,0 +1,182 @@
+.page-content .page-fairdetail {
+  .right {
+    padding-bottom: 0;
+  }
+}
+.fairdetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .top {
+    background: #0091FF;
+    color: #fff;
+
+    .right-top-nav {
+      color: #fff;
+      margin: 0 30px;
+      width: auto;
+
+      > span {
+        margin-left: 0;
+      }
+    }
+
+    .info-search {
+      padding-bottom: 30px;
+    }
+    
+  }
+  .top-detail {
+    padding: 30px;
+    min-height: 220px;
+    
+    .title1 {
+      color: #fff;
+      line-height: 40px;
+    }
+
+    .title2 {
+      color: #fff;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    .fairdetail-btns {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      width: 150px;
+      border-top: none;
+      flex-shrink: 0;
+      border-radius: 30px;
+      background: #fff;
+      color: #0091FF;
+      text-align: center;
+      padding: 20px;
+      align-self: center;
+      margin-left: 100px;
+    }
+
+    .btn:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .top-info {
+    background-color: #0071FE;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0px 0 30px;
+    font-size: 14px;
+
+    > div > span {
+      margin-right: 17px;
+    }
+
+    .info-time {
+      padding-right: 30px;
+      padding-left: 40px;
+      background: url('../../assets/images/fair-detail-info.png');
+      background-size: 100% 100%;
+      word-break: break-all;
+    }
+  }
+
+  .num-info {
+    height: 80px;
+    line-height: 80px;
+    color: #6D7278;
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .num-item {
+      margin: 0 40px;
+    }
+
+    > div {
+      display: flex;
+    }
+
+    .info-number {
+      margin: 0 4px;
+      background-repeat: repeat-x;
+      display: flex;
+    }
+
+    .info-number-item {
+      width: 26px;
+      margin: 0 3px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      background: url('../../assets/images/number-bg.png');
+      background-repeat: repeat-x;
+      background-size: 100% 100%;
+      background-position: center;
+      margin-top: 24px;
+      color: #FF6E11;
+      font-size: 23px;
+    }
+  }
+
+  .info-search {
+    background: #fff;
+    margin: 0 0;
+
+    .erji-form {
+      background: #fff;
+      margin: 0 0;
+      padding: 20px 0;
+      padding-right: 24px;
+      
+      .ant-form {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .fairdetail-list {
+    background: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-bottom: 30px;
+
+    .ant-empty {
+      margin: 40px auto;
+    }
+
+    
+    .fairdetail-item:nth-child(4n) {
+      margin-right: 0; 
+    }
+
+  }
+  .jobsFair-not-show {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border-top: 20px solid #F2F2F2;
+    color: #000;
+
+    img {
+      width: 112px;
+      height: 64px;
+      margin-bottom: 15px;
+    }
+  }
+}

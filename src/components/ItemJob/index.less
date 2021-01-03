@@ -1,0 +1,121 @@
+.zhiwei-item-wrap {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin-right: 12px;
+  width: calc(50% - 6px);
+
+  .zhiwei-item {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #EDEDED;
+    display: flex;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0px;
+    border-radius: 6px;
+
+    img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin-right: 16px;
+      margin-left: 25px;
+      flex-shrink: 0;
+    }
+
+    .zhiwei-item-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 54px;
+      width: 310px;
+      padding-right: 25px;
+
+      .zhiwei-item-title {
+        font-size: 16px;
+        color: #333;
+        display: flex;
+      }
+
+      .zhiwei-item-title-text {
+        display: inline-block;
+      }
+
+      .zhiwei-item-price {
+        margin-left: 16px;
+        color: #AA2E24;
+        min-width: 80px;
+      }
+
+      .zhiwei-item-tag {
+        font-size: 14px;
+        color: #AAADB1;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.zhiwei-item-wrap:hover {
+  .zhiwei-item {
+    .zhiwei-item-title {
+      color: #AA2E24;
+    }
+
+    .zhiwei-item-tag {
+      color: #AA2E24;
+    }
+  }
+}
+
+.zhiwei-item-wrap.sec {
+  width: 100%;
+
+  .zhiwei-item {
+
+    .zhiwei-item-text {
+      flex-direction: row;
+      line-height: 54px;
+      width: 100%;
+      flex-grow: 1;
+      justify-content: space-between;
+      margin-right: 24px;
+    }
+  }
+}
+
+.ant-tabs-tabpane .zhiwei-item-wrap:nth-child(2n+2) {
+  margin-right: 0;
+}
+
+.erji .zhiwei-item-wrap {
+  .zhiwei-item  {
+    .zhiwei-item-text {
+      width: 100%;
+      padding-right: 145px;
+
+      .zhiwei-item-title {
+        display: flex;
+      }
+
+      .zhiwei-item-title-text {
+        display: inline-block;
+        max-width: unset;
+      }
+
+      .zhiwei-item-price {
+        margin-left: 16px;
+        color: #0091FF;
+        min-width: 80px;
+      }
+
+      .zhiwei-item-tag {
+        font-size: 14px;
+        color: #AAADB1;
+        font-weight: normal;
+      }
+    }
+  } 
+}
