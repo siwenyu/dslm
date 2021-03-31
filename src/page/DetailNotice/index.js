@@ -159,7 +159,7 @@ export default function DetailNotice() {
                           }
                         </div>
 
-                        <SubmitResume />
+                        <SubmitResume data={e.job} />
                       </div>
                     )
                   })

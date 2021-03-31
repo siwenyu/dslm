@@ -65,8 +65,8 @@ export default function Fairs() {
                   }
                 </div>
                 <div className="normal-col fairdetail-btns">
-                  <SubmitResume text="单位报名" clickHandle={clickHandleUnit} isShowIcon={true}/>
-                  <SubmitResume text="学生报名" modalTitle="欢迎扫码报名参加双选会" isShowIcon={true}/>
+                  <SubmitResume text="单位报名" data={detail} clickHandle={clickHandleUnit} isShowIcon={true}/>
+                  <SubmitResume text="学生报名" data={detail} modalTitle="欢迎扫码报名参加双选会" isShowIcon={true}/>
                 </div>
               </div>
 

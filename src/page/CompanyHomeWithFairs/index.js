@@ -37,7 +37,7 @@ const columns = [
     dataIndex: 'jobId',
     key: 'jobId',
     width: 140,
-    render: () => <SubmitResume />
+    render: (data, record) => <SubmitResume data={record} />
   },
 ];
 

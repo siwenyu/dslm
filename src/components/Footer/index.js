@@ -25,7 +25,7 @@ export default function Footer({
           <span>东北师范大学学生就业指导服务中心</span>
           <span>版权所有</span>
           <span><img alt="" src={icon} /></span>
-          <span>吉ICP备05004942 </span>
+          <span><a href="https://beian.miit.gov.cn/" target="_blank">吉ICP备05004942</a></span>
           <br />
           <span>可信网站验证 </span>
           <span>安全联盟 </span>

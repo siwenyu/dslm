@@ -39,7 +39,7 @@ export default function ItemJobWithFair({
                     <div className="before" />
                     <div className="title16 c-line-clamp1">{item.job.name}</div>
                   </div>
-                  <SubmitResume modalTitle="欢迎扫码报名参加双选会" />
+                  <SubmitResume modalTitle="欢迎扫码报名参加双选会" data={item.job} />
                 </div>
               )
             })

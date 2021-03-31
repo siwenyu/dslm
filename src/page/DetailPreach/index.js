@@ -45,7 +45,7 @@ const columns = [
     dataIndex: 'jobId',
     key: 'jobId',
     width: 140,
-    render: () => <SubmitResume />
+    render: (data, record) => <SubmitResume data={record} />
   },
 ];
 
@@ -131,7 +131,7 @@ export default function DetailPreach() {
                     <div className="erji-list-wrap">
                       <ErjiDetailKeys list={listData} />
                     </div>
-                    <SubmitResume text="立即报名" modalTitle="欢迎扫码报名参加宣讲会" />
+                    <SubmitResume text="立即报名" data={detail} modalTitle="欢迎扫码报名参加宣讲会" />
                   </div>
                 </Fragment>
               )

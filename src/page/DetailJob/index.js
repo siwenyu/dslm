@@ -144,7 +144,7 @@ export default function DetailJob() {
           <br />
           <br />
 
-          <SubmitResume />
+          <SubmitResume data={detail} />
         </div>
       </div>
     </Layout>
