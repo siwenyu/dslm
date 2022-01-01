@@ -16,7 +16,7 @@ export default function ItemFair({
     window.open(`/detailfair?${rightNavType ? `&secRNav=${rightNavType}`: ''}&headerNav=11&id=${data.fairId}&rightNav=6`);
   }
   return (
-    <div key={data.name} className="preach-item hover-item" onClick={itemClick}>
+    <div key={data.fairId || data.name} className="preach-item hover-item" onClick={itemClick}>
       <div>
         <div className="rili">
           <RiliItem time={`${data.start}`} type={data.open ? 1 : 2} />

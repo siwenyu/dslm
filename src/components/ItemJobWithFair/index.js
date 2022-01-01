@@ -34,7 +34,7 @@ export default function ItemJobWithFair({
           data.fairJobs?.length > 0 && (
             data.fairJobs.slice(0, 3).map(item => {
               return (
-                <div key={item.job.name} className="fairdetail-job-item">
+                <div key={item.job?.jobId || item.job?.name} className="fairdetail-job-item">
                   <div>
                     <div className="before" />
                     <div className="title16 c-line-clamp1">{item.job.name}</div>

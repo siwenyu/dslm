@@ -37,7 +37,7 @@ export default function Homeshouxu({
           {
             list.map((e, index) => {
               return (
-                <ShouxuItem data={e} key={e.title} />
+                <ShouxuItem data={e} key={e.infoId || e.title} />
               )
             })
           }

@@ -43,7 +43,7 @@ export default function HomeNews({
               {
                 newsListRender.map((e, index) => {
                   if (index > 0) {
-                    return <NewsItem pathName="detailgonggao" key={e.title} hasTime={true} hasBefore={true} beforeType={2} isHot={true} data={e} />
+                    return <NewsItem pathName="detailgonggao" key={e.infoId || e.title} hasTime={true} hasBefore={true} beforeType={2} isHot={true} data={e} />
                   }
                 })
               }

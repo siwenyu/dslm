@@ -18,7 +18,7 @@ export default function ItemNews({
   return (
     <div
       onClick={handleClick}
-      key={data.title}
+      key={data.infoId || data.title}
       className={`news-item hover-item ${data.indexWeight > 0 ? 'news-item-ishot' : ''} news-item-before${beforeType}`}
     >
       <div className="c-line-clamp1">

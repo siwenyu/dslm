@@ -24,7 +24,7 @@ export default function StuZhiyefudao() {
                 item.riliType = indexIndex + 1;
                 item.riliType = item.riliType > 2 ? 2 : item.riliType;
                 item.riliType = item.riliType > 6 ? 3 : item.riliType;
-                return <ItemPreach key={item.name} riliType={item.riliType} data={item} />
+                return <ItemPreach key={item.preachId || item.name} riliType={item.riliType} data={item} />
               })
             }
           </div>

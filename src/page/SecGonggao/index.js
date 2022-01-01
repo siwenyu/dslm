@@ -53,7 +53,7 @@ export default function SecGonggao() {
               list
                 ? (
                   list.map((item, indexIndex) => {
-                    return <ItemNews pathName="normaldetail" key={item.title} hasBefore={false} hasTime={true} data={item} />
+                    return <ItemNews pathName="normaldetail" key={item.infoId || item.title} hasBefore={false} hasTime={true} data={item} />
                   })
                 )
                 : (

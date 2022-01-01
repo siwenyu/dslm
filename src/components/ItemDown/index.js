@@ -14,7 +14,7 @@ export default function ShouxuItem({
   };
 
   return (
-    <div onClick={handleDown} key={data.title} className="down-item">
+    <div onClick={handleDown} key={data.infoId || data.title} className="down-item">
       <div className="c-line-clamp1">
         {data.title}
       </div>

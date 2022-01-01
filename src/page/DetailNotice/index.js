@@ -145,7 +145,7 @@ export default function DetailNotice() {
                 {
                   detail.noticeJobs && detail.noticeJobs.map(e => {
                     return (
-                      <div key={e.job?.name} className="item">
+                      <div key={e.job?.jobId || e.job?.name} className="item">
                         <div className="item-info" onClick={() => window.open(`/detailjob?id=${e.jobId}&headerNav=13&rightNav=102&headerNav=13`)}>
                           <div className="before"></div>
                           <div className="title18">{e.job?.name}</div>

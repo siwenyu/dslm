@@ -265,7 +265,7 @@ export default function StuXuanjianghui() {
                   item.riliType = indexIndex + 1;
                   item.riliType = item.riliType > 2 ? 2 : item.riliType;
                   item.riliType = item.riliType > 6 ? 3 : item.riliType;
-                  return <ZhaopinItem key={item.title} riliType={item.riliType} data={item} />
+                  return <ZhaopinItem key={item.noticeId || item.title} riliType={item.riliType} data={item} />
                 })
                 : <Empty />
             }

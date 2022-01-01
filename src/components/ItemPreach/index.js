@@ -22,7 +22,7 @@ export default function PreachItem({
   });
   data.headCount = headCount;
   return (
-    <div key={data.name} className="preach-item hover-item" onClick={() => itemClick(data)}>
+    <div key={data.preachId || data.name} className="preach-item hover-item" onClick={() => itemClick(data)}>
       <div>
         <div className="rili">
           <RiliItem time={`${data.preachDate} ${data.start}`} type={data.listWeight > 0 ? '1' : '2'} />

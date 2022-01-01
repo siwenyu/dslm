@@ -27,7 +27,7 @@ export default function NewList() {
                 item.riliType = indexIndex + 1;
                 item.riliType = item.riliType > 2 ? 2 : item.riliType;
                 item.riliType = item.riliType > 6 ? 3 : item.riliType;
-                return <NormalList key={item.title} hasBefore={false} hasTime={true} data={item} />
+                return <NormalList key={item.infoId || item.title} hasBefore={false} hasTime={true} data={item} />
               })
             }
           </div>

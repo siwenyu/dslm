@@ -8,7 +8,7 @@ export default function SkillItem({
   data
 }) {
   return (
-    <div key={data.title} className="skill-item-wrap">
+    <div key={data.infoId || data.title} className="skill-item-wrap">
       <div className="skill-item" onClick={() => {window.open(data.link)}}>
         <img alt="" src={data.img} />
         <div className="skill-item-text">

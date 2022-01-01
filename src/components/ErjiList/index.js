@@ -436,19 +436,19 @@ export default function ErjiList({
                 ? list.slice(0, type === 'jobsFair' ? 20 : 10).map((item, indexIndex) => {
                   switch (type) {
                     case 'preaches':
-                      return <ItemPreach key={item.title} riliType={item.riliType} data={item} />;
+                      return <ItemPreach key={item.preachId || item.title} riliType={item.riliType} data={item} />;
                     case 'notices':
-                      return <ZhaopinItem key={item.title} riliType={item.riliType} data={item} />;
+                      return <ZhaopinItem key={item.noticeId || item.title} riliType={item.riliType} data={item} />;
                     case 'jobs':
-                      return <ZhiweiItem key={item.title} riliType={item.riliType} data={item} />;
+                      return <ZhiweiItem key={item.jobId || item.title} riliType={item.riliType} data={item} />;
                     case 'jobsFair':
                       return (
                         <Fragment>
-                          <ItemJobWithFair key={item.title} riliType={item.riliType} data={item} />
+                          <ItemJobWithFair key={item.fairId || item.jobId} riliType={item.riliType} data={item} />
                         </Fragment>
                       );
                   }
-                  return <ZhaopinItem key={item.title} riliType={item.riliType} data={item} />
+                  return <ZhaopinItem key={item.noticeId || item.title} riliType={item.riliType} data={item} />
                 })
                 : <Empty />
             }
